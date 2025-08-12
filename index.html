@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Denis Kathiriya — Portfolio</title>
+  <meta name="description" content="Denis Kathiriya — Data Analytics & Machine Learning portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10; --panel:#111318; --text:#e8ecf1; --muted:#a8b3c1; --accent:#5eead4; --soft:#1a1d24; --stroke:#232632;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:0 auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:linear-gradient(180deg,var(--panel),var(--soft));border:1px solid var(--stroke);border-radius:16px;padding:22px}
+    .photo{width:140px;height:180px;border-radius:12px;overflow:hidden;border:1px solid var(--stroke);background:#222;flex:0 0 auto}
+    .photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+    h1{font-size:28px;margin:0 0 6px}
+    .subtitle{color:var(--muted);margin:0 0 10px}
+    nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
+    nav a{font-weight:600}
+    .btns{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--stroke);background:var(--soft);font-weight:600}
+    .btn.primary{background:var(--accent);color:#032b25;border-color:transparent}
+    section{margin-top:28px;padding:22px;border:1px solid var(--stroke);background:var(--panel);border-radius:16px}
+    section h2{margin:0 0 12px;font-size:20px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media (min-width:880px){ .grid{grid-template-columns:1fr 1fr} }
+    .card{padding:16px;border:1px solid var(--stroke);background:var(--soft);border-radius:12px}
+    .list{margin:0;padding-left:20px}
+    .kpis{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .kpi{font-size:12px;color:var(--muted);padding:4px 8px;border:1px dashed var(--stroke);border-radius:8px}
+    footer{color:var(--muted);text-align:center;margin:26px 0 10px}
+    .muted{color:var(--muted)}
+    .pill{font-weight:600;color:#032b25;background:var(--accent);padding:2px 8px;border-radius:999px;margin-left:6px}
+    .two-col{columns:2;column-gap:18px}
+    @media (max-width:700px){ .two-col{columns:1} }
+
+    /* small cert card layout */
+    .certs{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width:700px){ .certs{grid-template-columns:1fr 1fr} }
+    .cert{display:flex;gap:12px;align-items:center;border:1px solid var(--stroke);background:var(--soft);border-radius:12px;padding:10px}
+    .cert img{width:110px;height:auto;border-radius:8px;border:1px solid var(--stroke)}
+    .cert a{font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HERO -->
+    <header>
+      <div class="photo">
+        <picture>
+          <source srcset="denis_k_passport.jpg" type="image/webp" >
+          <img src="denis_k_passport.jpg" alt="Passport-style portrait of Denis Kathiriya" style="object-position: 90%; " width="600" height="800" loading="eager" />
+
+        </picture>
+      </div>
+      <div>
+        <h1>Denis Kathiriya</h1>
+        <p class="subtitle">Data Analytics &amp; Machine Learning • Based in Germany</p>
+        <nav>
+          <a href="mailto:deniskathiriya@gmail.com">deniskathiriya@gmail.com</a>
+          <span class="muted">•</span>
+          <a href="tel:+4915560740087">+49&nbsp;155&nbsp;60740087</a>
+          <span class="muted">•</span>
+          <a href="https://www.linkedin.com/in/deniskathiriya/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="muted">•</span>
+          <a href="https://github.com/deniskathiriya" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <div class="btns">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="Denis_Kathiriya_Resume.pdf" target="_blank" rel="noopener" download>Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a data enthusiast focused on analytics, ML, and optimization. I’m currently pursuing an
+        <strong>M.Sc. in E-Government</strong> and have a solid foundation in data science and computer programming.
+        I enjoy turning messy data into clear, actionable insights and building practical models and dashboards.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>M.Sc. E-Government</strong><span class="pill">10/2024 – Present</span><br>
+          University of Koblenz — Koblenz, Germany
+          <div class="muted">Machine Learning &amp; Data Mining, Data Science, Big Data, AI, Risk Management, Data Analysis</div>
+        </div>
+        <div class="card">
+          <strong>Bachelor of Computer Application</strong><span class="pill">10/2021 – 04/2024</span><br>
+          Veer Narmad South Gujarat University — Gujarat, India
+          <div class="muted">Programming (Python, Java, .NET, C, C++), Web/App Dev, Data Analysis, DSA</div>
+          <div class="kpis"><span class="kpi">GPA: 1.6</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <strong>Data Analytics Intern — NopCypher (India)</strong>
+        <div class="muted">10/2023 – 03/2024</div>
+        <ul class="list">
+          <li>Built visualizations in Power BI, Excel, and Python to translate complex data into insights.</li>
+          <li>Produced reports & interactive dashboards, improving info delivery speed and decision support.</li>
+          <li>Optimized SQL queries to speed up data retrieval and streamline reporting pipelines.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Data Analytics Intern — Actize IT (India)</strong>
+        <div class="muted">04/2023 – 09/2023</div>
+        <ul class="list">
+          <li>Analyzed mobile network KPIs, mapped coverage gaps, and delivered actionable dashboards.</li>
+          <li>Streamlined reporting workflows to reduce analysis time and improve diagnostics.</li>
+          <li>Worked with Tableau, SQL & data modeling to produce insightful performance reports.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Sales Forecasting Using Time Series</strong>
+          <div class="muted">ARIMA, Prophet • SQL ETL • Tableau</div>
+          <ul class="list">
+            <li>Built ARIMA/Prophet models to forecast retail sales and surface anomalies.</li>
+            <li>Engineered an ETL flow in SQL to clean and validate data.</li>
+            <li>Published an interactive dashboard to compare actual vs. forecasted sales.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>House Price Prediction</strong>
+          <div class="muted">XGBoost, Linear Regression • Streamlit • Power BI</div>
+          <ul class="list">
+            <li>End-to-end regression pipeline with feature engineering and robust preprocessing.</li>
+            <li>Deployed a Streamlit app for instant price predictions from user inputs.</li>
+            <li>Built a Power BI dashboard with live data to track market trends.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Customer Churn Prediction</strong>
+          <div class="muted">LogReg, Random Forest, XGBoost • SQL • Tableau</div>
+          <ul class="list">
+            <li>Modeled churn drivers and delivered stakeholder dashboards for retention strategies.</li>
+            <li>Integrated SQL pipelines to extract behavioral signals from relational data.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <p><strong>Programming:</strong> Python, SQL, R</p>
+        <p><strong>ML / Data:</strong> NumPy, Pandas, SciPy, Scikit-learn, TensorFlow, PyTorch, PySpark ML, NLTK, Regression</p>
+        <p><strong>Visualization:</strong> Power BI, Tableau, Matplotlib, Seaborn, ggplot2, Dash, Plotly</p>
+        <p><strong>Databases:</strong> MySQL, Microsoft SQL Server</p>
+        <p><strong>Tools:</strong> VS Code, PyCharm, Jupyter</p>
+        <p><strong>OS & Other:</strong> Windows, Linux, MS Office (Word, PowerPoint, Excel, Outlook, SharePoint)</p>
+        <p><strong>Strengths:</strong> Creativity, Problem-solving, Teamwork, Communication, Analytical, Time management, Adaptable</p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certs">
+      <h2>Certificates</h2>
+      <div class="certs">
+        <div class="cert">
+          <img src="cert_ibm_python.webp" alt="IBM Certificate — Python for Data Science, AI & Development">
+
+          <div>
+            <a href="https://coursera.org/verify/GB6HA9WR6MHK" target="_blank" rel="noopener">
+              IBM — Python for Data Science, AI & Development (Coursera, 2023)
+            </a>
+            <div class="muted">Verified link • Opens on Coursera</div>
+          </div>
+        </div>
+        <div class="cert">
+          <img src="cert_google_rprog.webp" alt="Google Certificate — Data Analysis with R Programming">
+          <div>
+            <a href="https://coursera.org/verify/KVDE5JZ2722W" target="_blank" rel="noopener">
+              Google — Data Analysis with R Programming (Coursera, 2024)
+            </a>
+            <div class="muted">Verified link • Opens on Coursera</div>
+          </div>
+        </div>
+        <div class="cert">
+          <img src="cert_fcc_scipy.webp" alt="freeCodeCamp Certificate — Scientific Computing with Python">
+          <div>
+            <a href="https://www.freecodecamp.org/certification/_denis_/scientific-computing-with-python-v7" target="_blank" rel="noopener">
+              freeCodeCamp — Scientific Computing with Python (2022)
+            </a>
+            <div class="muted">Public profile link</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES & CONTACT -->
+    <section id="contact">
+      <h2>Languages & Contact</h2>
+      <p><strong>Languages:</strong> English (Fluent), German (Professional working)</p>
+      <p><strong>Email:</strong> <a href="mailto:deniskathiriya@gmail.com">deniskathiriya@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deniskathiriya/" target="_blank" rel="noopener">linkedin.com/in/deniskathiriya</a></p>
+      <p><strong>Resume:</strong> <a href="Denis_Kathiriya_Resume.pdf" target="_blank" rel="noopener" download>Download PDF</a></p>
+    </section>
+
+    <footer>© <span id="year"></span> Denis Kathiriya</footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
